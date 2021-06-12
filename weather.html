@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="weather.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>        
+        <div id="container" >
+                <input class="search-box" value="" id="input" type="text" placeholder="Enter City Name..." required>
+                <button id="search-button" onclick="getResult(document.getElementById('input').value)"><i class="fa fa-search"></i></button>
+                <div class="city-location" id="name">---</div>
+                <div class="date-location"></div>
+                <div class="temprature"></div>
+                <div class="temp-icon" id="unique">---</div>
+                <div class="wind-speed">---</div>
+        </div>
+        <script src="weather.js"></script>     
+</body>
+</html>
